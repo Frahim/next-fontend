@@ -1,0 +1,74 @@
+.bannerWrap {
+   width: 100%;
+
+}
+.slider{
+    position: relative;
+    padding: 8rem 0 10rem 0;
+    min-height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    border-top: 10px solid #b6c275;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+.backgroundVideo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    background-position: center top !important;
+    z-index: -1;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all ease-in-out 2s;
+    -o-transition: all ease-in-out 2s;
+    transition: all ease-in-out 2s;
+}
+.backgroundVideo::after{
+    content: '';
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(#000));
+    background-image: -o-linear-gradient(top, rgba(0,0,0,0) 0%, #000 100%);
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000 100%);
+    opacity: 0.8;
+}
+.backgroundVideo video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.gridPad{
+    padding-top: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.bannerTitle{
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 5.4rem;
+    color: #b6c275;
+    margin: 0;
+    word-break: break-word;
+}
+
+.bannerDesc p{
+    color:#fff;
+}
