@@ -1,7 +1,12 @@
 import React from 'react'
 
 import styles from '../components/banner.module.css'
-import { Istok_Web } from 'next/font/google';
+
+import { Istok_Web} from '@next/font/google'
+const istok = Istok_Web({ 
+    subsets: ['latin'],
+    weight:['400','700']
+  })
 
 function HomeBanner() {
     return (
@@ -17,13 +22,13 @@ function HomeBanner() {
 
             <div className="container">
                 <div className='row'> 
-                <div className="col-sm-12 col-md-6 mt-5">
+                <div className="col-sm-12 col-md-5 mt-5">
                         <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" className={styles.bannerTitle}>
-                            <h1 className="btitle">Cultivating for a better future</h1>
+                            <h1 className={istok.className}>Cultivating for a better future</h1>
                         </div>
                     <div className="col-1-1 no-p">
                             <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800" className={styles.bannerDesc}>
-                                <p>MENACO B.V. is a commercial vegetable seed company based in The Netherlands. We offer products of 3 commercials brands: Nickerson-Zwaan, DP Elite Zaden and Huizer Zaden.</p>
+                                <p className={istok.className}>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
 
                             </div>
                     </div>

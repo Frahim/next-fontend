@@ -8,7 +8,7 @@
     min-height: 60vh;
     display: -webkit-box;
     display: -ms-flexbox;
-    border-top: 10px solid #b6c275;
+    border-top:10px solid #da9e46;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -61,14 +61,17 @@
     padding-right: 1rem;
 }
 .bannerTitle{
-    font-size: 5rem;
+  
     font-weight: 400;
     line-height: 5.4rem;
-    color: #b6c275;
+    color: #da9938;
     margin: 0;
     word-break: break-word;
 }
-
+.bannerTitle h1{
+    font-size:4rem;
+font-weight: 300;
+}
 .bannerDesc p{
     color:#fff;
 }

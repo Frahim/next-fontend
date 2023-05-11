@@ -1,22 +1,15 @@
 "use client";
 import './globals.css';
-import { Exo, Roboto, Alkatra } from 'next/font/google';
-
 import 'bootstrap/dist/css/bootstrap.css';
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar'
 
-const exo = Exo({ subsets: ['latin'] })
-const alkatara = Alkatra({ subsets: ['latin'] })
 
-const roboto = Roboto({
-  weight: ['400', '700'],
-  style: ['normal'],
+import { Exo } from 'next/font/google';
+const exo = Exo({ 
   subsets: ['latin'],
-  display: 'swap',
-});
-
-
+  weight:['300','400','500','600'],
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -36,7 +29,7 @@ export default function RootLayout({
   return (
 
     <html lang='en'>
-      <body>
+      <body >
         <Navbar />
         {children}
       </body>
