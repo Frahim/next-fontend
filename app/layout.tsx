@@ -2,14 +2,21 @@
 import './globals.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import React, { useEffect } from 'react';
-import Navbar from '../components/Navbar'
-
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import { Istok_Web} from '@next/font/google'
+const istok = Istok_Web({ 
+    subsets: ['latin'],
+    weight:['400','700']
+  })
 
 import { Exo } from 'next/font/google';
 const exo = Exo({ 
   subsets: ['latin'],
   weight:['300','400','500','600'],
 })
+
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -32,6 +39,7 @@ export default function RootLayout({
       <body >
         <Navbar />
         {children}
+        <Footer/>
       </body>
     </html>
   );
