@@ -2,13 +2,17 @@ import React from "react"
 
 import HomeBanner from "../components/HomeBanner";
 import SisterConcern from "../components/sisterConcern"
+//import Carousel from "../components/carousel";
+import Factfiger from '../components/factfiger'
 
 
 export default function Home() {
     return (
         <>
-           <HomeBanner/>
-           <SisterConcern/>
+            <HomeBanner />
+            <SisterConcern />
+            <Factfiger/>
+           
 
         </>
     )

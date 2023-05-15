@@ -14,9 +14,9 @@ const istok = Istok_Web({
 
 export default function sisterConcern() {
   return (
-    <div className='wrapper sectionPadding'>
+    <div className='wrapper sectionPadding first'>
       <div className='container'>
-        <div className='row g-0 align'>
+        <div className='row g-0 align fedUponScorll'>
           <div className='col-sm-12 col-md-4 first_item'>
             <div className='wrapper-sec bg-gray'>
               <Image className="mw-200" width={150} alt="leeerob" src={Agril} />
@@ -45,7 +45,7 @@ export default function sisterConcern() {
           </div>
         </div>
 
-        <div className='row g-0 my-5'>          
+        <div className='row g-0 my-5 fedUponScorll'>          
           <div className='col-sm-12 col-md-4 scond_item'>
             <div className='wrapper-sec bg-cian  '>
               <h3 > King Feed LTD</h3>

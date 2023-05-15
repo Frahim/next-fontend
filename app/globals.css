@@ -216,3 +216,33 @@ a.sAncor {
 .copywrwp p {
   margin: 0;
 }
+
+/* single Product*/
+h1.productTitle {
+  font-size: 20px;
+  color: #dfa151;
+}
+h2.productType {
+  color: #66022c;
+  font-weight: 700;
+}
+h3.packageInstractionTitle {
+  font-size: 18px;
+}
+.packageInstraction ul {
+  list-style: none;
+  padding-left: 10px;
+  line-height: 1.8rem;
+}
+p.resistance {
+  font-weight: 600;
+}
+.tabilTitle {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.vtitle{font-weight: 600;}
+
+
+
+.op-0{opacity: 0;}
