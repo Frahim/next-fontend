@@ -7,8 +7,7 @@
     padding: 8rem 0 10rem 0;
     min-height: 60vh;
     display: -webkit-box;
-    display: -ms-flexbox;
-    border-top:10px solid #da9e46;
+    display: -ms-flexbox;   
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -64,7 +63,7 @@
   
     font-weight: 400;
     line-height: 5.4rem;
-    color: #da9938;
+    color: #fff;
     margin: 0;
     word-break: break-word;
 }

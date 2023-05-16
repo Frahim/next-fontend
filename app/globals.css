@@ -78,7 +78,25 @@ a {
   max-width: 60%;
   margin: 0 auto;
 }
+/* Nave */
+nav.navbar {
+  border-bottom: 1.3rem solid #b6c275;
+  position: relative;
+  z-index: 99;
+  background: #fff;
+}
+a.nav-link {
+  padding: 2rem 1rem !important;
+}
+/* Sisterconsern*/
 
+.kingsLogo{
+  background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
 .first_item .wrapper-sec {
   padding: 30px;
   display: flex;
@@ -207,6 +225,88 @@ a.sAncor {
   z-index: 2;
   background: url(/_next/static/media/footer-bg.271f28c7.svg) 0 0 no-repeat;
 }
+
+.footerWidget{
+  position: relative;
+  z-index: 99;
+}
+h3.widgetTitle.t-white {
+  margin-bottom: 30px;
+}
+ul.footerNav  {
+padding: 0;
+}
+ul.footerNav > li {
+  list-style: none;
+  border-bottom:1px solid #ffffff52;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+ul.footerNav > li> svg {
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+ul.footerNav > li> svg > polyline {
+  stroke: #fff;
+}
+ul.footerNav > li > a{
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 0;
+  display: inline-block;
+  margin-left: 5px;
+  transition: all 0.2s;
+-webkit-transition: all 0.2s;
+}
+ul.footerNav > li:hover > svg{
+  margin-left: 3px;
+}
+
+
+ul.socialmedia {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+ul.socialmedia > li > a > svg > path, .address svg path, .phone svg path{
+  fill: #fff;
+}
+ul.socialmedia > li > a:hover > svg > path{
+  fill: #00000080;
+}
+ul.socialmedia li a {
+  width: 30px;
+  height: 30px;
+  background: #00000080;
+  display: block;
+  text-align: center;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+ul.socialmedia li a:hover {
+  background: #fff;
+}
+.address,.phone,.email {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.address svg, .phone svg{
+  font-size: 30px;
+}
+
+span.phone-wrap {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.phone-wrap a, .eamil a{
+  color: #fff;
+}
+.phone-wrap a:hover, .eamil a:hover{
+  color: #00000080;
+}
 .copywrwp {
   padding: 50px;
   display: flex;
@@ -215,6 +315,9 @@ a.sAncor {
 }
 .copywrwp p {
   margin: 0;
+}
+.copywrwp a {
+  color: #000;
 }
 
 /* single Product*/
@@ -246,3 +349,58 @@ p.resistance {
 
 
 .op-0{opacity: 0;}
+
+
+/* Fact And Figure*/
+.factAndFigurs {
+  padding: 100px 0;
+  background-color: #aeceea;
+  background-image: url(/top.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  overflow: hidden;
+}
+.cropsinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+span.number,span.plusIcon {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+
+}
+span.itemname {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.cropsinner svg {
+  background: #fff;
+  width: 80px;
+  height: 80px;
+  padding: 20px;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.factAndFigurs::before{
+  content: "";
+  position: absolute;
+  width: 400%;
+  height: 466%;
+  top: -161%;
+  left: 0%;
+  z-index: 2;
+  background: url(/fact-bg.svg) 0 0 no-repeat;
+}
+
+.factAndFigurs > .container{
+  z-index: 9;
+  position: relative;
+}

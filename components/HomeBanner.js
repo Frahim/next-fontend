@@ -3,6 +3,8 @@ import React from 'react';
 import styles from '../components/banner.module.css';
 import { Istok_Web } from '@next/font/google';
 
+
+
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
@@ -36,7 +38,7 @@ function HomeBanner() {
                 <div className={styles.bannerWrap}>
                     <div className={styles.backgroundVideo}>
                         <video muted autoPlay loop className=''>
-                            <source src="https://vod-progressive.akamaized.net/exp=1683738550~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4171%2F14%2F370856289%2F1538510983.mp4~hmac=dfb3cf353a1130a3c11aee495c3425966ec2832a8da46a53e3bc9a548d509a32/vimeo-prod-skyfire-std-us/01/4171/14/370856289/1538510983.mp4" />
+                            <source src="./sunflowers-21530.mp4" type="video/mp4" />
                         </video>
                     </div>
                 </div>
