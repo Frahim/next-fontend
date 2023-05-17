@@ -1,29 +1,48 @@
 "use client";
 import { useState } from "react";
-import { items } from "../public/Items.json";
-import { Carousel } from "react-bootstrap";
+//import { items } from "../public/Items.json";
+import items from "../public/Items.json";
+import pim from "../public/cabbage-balashi-large.jpg"
+
+import Image from "next/image";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../components/carosul.madule.css";
+import { Carousel } from '@trendyol-js/react-carousel';
 
-export default function BootstrapCarousel() {
-  const { bootstrap } = items;
-  const [index, setIndex] = useState(0);
+export default function BootstrapCarousel({ }) {
 
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-      {bootstrap.map((item) => (
-        <Carousel.Item key={item.id} className={styles.itemP} interval={4000}>
-          <img src={item.imageUrl} alt="slides" />
-          <Carousel.Caption className={styles.caption}>
-            <h3>{item.title}</h3>
-            <p>{item.body}</p>
-            <button className="btn btn-danger">Visit Docs</button>
-          </Carousel.Caption>
-        </Carousel.Item>
-      ))}
-    </Carousel>
+    <div className="carosulWrapper">
+      <div className="container">
+        <div className="titlesexction">
+          <h2 className="blogTitle text-center mb-5">Our News and Events</h2>
+        </div>
+        <Carousel className="mycar" show={3} slide={3} swiping={true}>
+          <div className="itemwrwpper">
+            <Image width={300} height={300} src={pim} />
+            <h2 className="postTitle">Post title</h2>
+          </div>
+          <div className="itemwrwpper">
+            <Image width={300} height={300} src={pim} />
+            <h2 className="postTitle">Post title</h2>
+          </div>
+          <div className="itemwrwpper">
+            <Image width={300} height={300} src={pim} />
+            <h2 className="postTitle">Post title</h2>
+          </div>
+          <div className="itemwrwpper">
+            <Image width={300} height={300} src={pim} />
+            <h2 className="postTitle">Post title</h2>
+          </div>
+          <div className="itemwrwpper">
+            <Image width={300} height={300} src={pim} />
+            <h2 className="postTitle">Post title</h2>
+          </div>
+
+        </Carousel>
+      </div>
+    </div>
+
   );
 }

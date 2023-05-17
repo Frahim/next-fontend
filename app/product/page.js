@@ -4,10 +4,7 @@ import Link from 'next/link';
 
 import products from "../products";
 
-import Beans from '../../public/beans.jpg';
-import Bitrrot from '../../public/1200x900_beetroot.jpg';
-import Bricolli from '../../public/1200x900_broccoli.jpg';
-import Cabbez from '../../public/1200x900_green-cabbage.jpg'
+
 
 
 

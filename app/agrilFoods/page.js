@@ -7,7 +7,7 @@ function AgrilFoods() {
   return (
     <>
      <HomeBanner/>
-      <div className='sectionPadding bg-whitesmoke'>     
+      <div className='bg-whitesmoke'>     
       <Products/>
     </div>
     </>

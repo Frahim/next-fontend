@@ -1,79 +1,164 @@
-import React from 'react'
+"use client"
+import React, { useRef, useEffect } from "react";
 import Image from 'next/image';
 import whoicon from '../public/whoweare.png';
 import Agril from '../public/agrillogo_03.png';
-import kingfeed from '../public/kingfeed-logo_03.png'
-import Arrow from '../public/arow.svg'
+import kingfeed from '../public/kingfeedLogo.png';
+import Arrow from '../public/arow.svg';
+import gorgic from '../public/Georgiclogo.png'
 import Link from 'next/link';
-import { Istok_Web} from '@next/font/google'
-const istok = Istok_Web({ 
-    subsets: ['latin'],
-    weight:['400','700']
-  })
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { GrFormNextLink } from "react-icons/gr";
+import { Istok_Web } from '@next/font/google'
+const istok = Istok_Web({ subsets: ['latin'], weight: ['400', '700'] })
 
+import { Mogra } from '@next/font/google'
+const mogra = Mogra({ subsets: ['latin'], weight: ['400'] })
 
 export default function sisterConcern() {
+  gsap.registerPlugin(ScrollTrigger);
+  const ref = useRef(null);
+  useEffect(() => {
+    const element = ref.current;
+    gsap.fromTo(
+      element.querySelectorAll(".slideRighr"),
+      {
+        opacity: 0,
+        x: 100
+      },
+      {
+        opacity: 1,
+        x: 0,
+        scrollTrigger: {
+          trigger: element.querySelector(".slideRighr"),
+
+        }
+      }
+    );
+  }, []);
+
+  useEffect(() => {
+    const element = document.querySelectorAll(".slideRight2");
+    gsap.fromTo(
+      element,
+      {
+        opacity: 0,
+        y: 400
+      },
+      {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: element,
+
+        }
+      }
+    );
+  }, []);
+  useEffect(() => {
+    const element = document.querySelectorAll(".slideleft2");
+    gsap.fromTo(
+      element,
+      {
+        opacity: 0,
+        y: 400,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        autoAlpha: 1,
+        scrollTrigger: {
+          trigger: element,
+          once: true
+        }
+      }
+    );
+  }, []);
+  useEffect(() => {
+    const element = document.querySelectorAll(".fadeUP");
+    gsap.fromTo(
+      element,
+      {
+        autoAlpha: 0,
+        y: 50
+      }, {
+      scrollTrigger: {
+        trigger: element,
+        once: true
+      },
+      duration: 1,
+      autoAlpha: 1,
+      y: 0
+    });
+  }, []);
+
+
   return (
-    <div className='wrapper sectionPadding first'>
+    <div className='wrapper sectionPadding first' >
       <div className='container'>
         <div className='row g-0 align'>
-          <div className='col-sm-12 col-md-4 first_item'>
+          <div className='col-sm-12 col-md-4 first_item sliderighr1' ref={ref}>
             <div className='wrapper-sec bg-gray'>
               <Image className="mw-200 kingsLogo" width={150} alt="leeerob" src={Agril} />
-              <h2 className='sisFirstTitle'>Who we are</h2>
-              <Link className="nav-link" href="/agrilFoods">
-              <Image className="mw-200" width={10} alt="leeerob" src={Arrow} />
+              <h2 className={`${mogra.className} sisFirstTitle`}>Who we are</h2>
+              <Link className="nextpage-link" href="/agrilFoods">
+                <GrFormNextLink className='nextpage-icon' />
               </Link>
-            
+
             </div>
           </div>
-          <div className='col-sm-12 col-md-4 scond_item'>
+          <div className='col-sm-12 col-md-4 scond_item' ref={ref}>
             <div className='wrapper-sec bg-white'>
-              <h3 className={istok.className}> Agril Foods LTD</h3>
+              <h3 className={mogra.className}> Agril Foods LTD</h3>
               <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document
                 or a typeface without relying on meaningful content. </p>
               <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document
                 or a typeface without relying on meaningful content. </p>
             </div>
           </div>
-          <div className='col-sm-12 col-md-4 third_item align-self-center'>
+          <div className='col-sm-12 col-md-4 third_item align-self-center slideLeft' ref={ref}>
             <div className='wrapper-sec bg-dark'>
-              <h3 className='t-antiquewhite'> Our people</h3>
+              <h3 className={`${mogra.className} t-antiquewhite`}> Our people</h3>
               <p className='t-antiquewhite'>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document
                 or a typeface without relying on meaningful content. </p>
             </div>
           </div>
         </div>
 
-        <div className='row g-0 my-5 fedUponScorll'>          
-          <div className='col-sm-12 col-md-4 scond_item'>
-            <div className='wrapper-sec bg-white'>
-              <h3 > King Feed LTD</h3>
-              <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document
-                or a typeface without relying on meaningful content. </p>
-              <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document
-                or a typeface without relying on meaningful content. </p>
-            </div>
-          </div>
-          <div className='col-sm-12 col-md-4 first_item'>
-            <div className='wrapper-sec bg-dark'>
-              <Image className="mw-200 kingsLogo" width={150} alt="leeerob" src={kingfeed} />
-              <h2 className='sisFirstTitle t-white'>Who we are</h2>
-              <Link href='#' className='sAncor'>
-              <Image className="mw-200" width={10} alt="leeerob" src={Arrow} />
+        <div className='row g-0 my-5' >
+          <div className='col-sm-12 col-md-4 scond_item slideRight2' ref={ref}>
+            <div className='wrapper-sec bg-white scwrwp'>
+              <Image className="sislogo" width={200} alt="leeerob" src={kingfeed} />
+              <Link className="sister-link" href="/agrilFoods">
+                <span className='sisName'> In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of . </span>
+                <GrFormNextLink className='sister-icon' />
               </Link>
             </div>
           </div>
-          <div className='col-sm-12 col-md-4 third_item align-self-center'>
-            <div className='wrapper-sec bg-white'>
-              <h3 > Our people</h3>
+
+          <div className='col-sm-12 col-md-4 first_item fadeUP'>
+            <div className='wrapper-sec bg-dark'>
+              <h2 className={`${mogra.className} t-white fs-40`}>Our Other <br />Brands</h2>
+            </div>
+          </div>
+
+          <div className='col-sm-12 col-md-4 third_item align-self-center slideleft2'>
+            <div className='wrapper-sec bg-white scwrwp'>
+              <Image className="sislogo" width={200} alt="leeerob" src={gorgic} />
+              <Link className="sister-link" href="/agrilFoods">
+                <span className='sisName'>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of .</span>
+                <GrFormNextLink className='sister-icon' />
+              </Link>
+              {/* <h3 > Our people</h3>
               <p >In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document
-                or a typeface without relying on meaningful content. </p>
+                or a typeface without relying on meaningful content. </p>*/}
             </div>
           </div>
         </div>
       </div>
     </div>
- 
+
   )
 }
