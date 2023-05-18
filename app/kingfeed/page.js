@@ -1,5 +1,4 @@
-import React from 'react'
-import HomeBanner from '@/components/HomeBanner';
+import React from 'react';
 import Products from '../product/page';
 import styles from '../../components/banner.module.css';
 import { Istok_Web } from '@next/font/google';

@@ -1,4 +1,3 @@
-import products from "../../products";
 
 import Image from "next/image";
 import Beens from "../../../public/beans.jpg"
@@ -66,34 +65,6 @@ function Product({ product }) {
   );
 }
 
-export async function getStaticPaths() {
-  const paths = products.map((product) => ({ params: { id: product.id.toString() } }));
 
-  return {
-    paths,
-    fallback: false,
-  };
-}
-
-export async function getStaticProps({ params }) {
-  console.log("params:", params);
-
-  const product = products.find((product) => product.id.toString() === params.id.toString());
-
-  if (!product) {
-    console.log("Product not found");
-    return {
-      notFound: true,
-    };
-  }
-
-  console.log("Product:", product);
-
-  return {
-    props: {
-      product: [id, name, description]
-    },
-  };
-}
 
 export default Product;
