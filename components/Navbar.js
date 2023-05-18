@@ -18,12 +18,18 @@ export default function Navbar() {
                         <ul className="navbar-nav mr-0  mb-2 mb-lg-0">
                             <li className="nav-item">
                                 <Link className="nav-link" href="/">Home</Link>
-                            </li>                            
+                            </li>
                             <li className="nav-item">
                                 <Link className="nav-link" href="/about">About</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" href="/agrilFoods">Agril Foods</Link>
+                            <li className="nav-item dropdown">
+                                <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                   Our Brands
+                                </Link>
+                                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><Link className="dropdown-item" href="/kingfeed">Kink Feeds</Link></li>
+                                    <li><Link className="dropdown-item" href="/georgicabd">Georgica</Link></li>                                    
+                                </ul>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" href="/contact">Contact</Link>

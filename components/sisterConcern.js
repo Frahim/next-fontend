@@ -30,6 +30,8 @@ export default function sisterConcern() {
       {
         opacity: 1,
         x: 0,
+        duration: 1,
+        autoAlpha: 1,
         scrollTrigger: {
           trigger: element.querySelector(".slideRighr"),
 
@@ -49,6 +51,8 @@ export default function sisterConcern() {
       {
         opacity: 1,
         y: 0,
+        duration: 1,
+        autoAlpha: 1,
         scrollTrigger: {
           trigger: element,
 
@@ -131,7 +135,7 @@ export default function sisterConcern() {
           <div className='col-sm-12 col-md-4 scond_item slideRight2' ref={ref}>
             <div className='wrapper-sec bg-white scwrwp'>
               <Image className="sislogo" width={200} alt="leeerob" src={kingfeed} />
-              <Link className="sister-link" href="/agrilFoods">
+              <Link className="sister-link" href="/kingfeed">
                 <span className='sisName'> In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of . </span>
                 <GrFormNextLink className='sister-icon' />
               </Link>
@@ -147,7 +151,7 @@ export default function sisterConcern() {
           <div className='col-sm-12 col-md-4 third_item align-self-center slideleft2'>
             <div className='wrapper-sec bg-white scwrwp'>
               <Image className="sislogo" width={200} alt="leeerob" src={gorgic} />
-              <Link className="sister-link" href="/agrilFoods">
+              <Link className="sister-link" href="/georgicabd">
                 <span className='sisName'>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of .</span>
                 <GrFormNextLink className='sister-icon' />
               </Link>

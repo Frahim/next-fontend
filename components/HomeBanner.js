@@ -25,16 +25,19 @@ function HomeBanner() {
             },
             {
                 opacity: 1,
-                y: 0
+                y: 0,
+                duration: 3,
+                autoAlpha: 3,
             }
         );
-        
+
     }, []);
 
 
     return (
         <>
             <div className={styles.slider} ref={ref}>
+                <div className={styles.borderAnimation}></div>
                 <div className={styles.bannerWrap}>
                     <div className={styles.backgroundVideo}>
                         <video muted autoPlay loop className=''>
@@ -45,13 +48,13 @@ function HomeBanner() {
 
                 <div className="container">
                     <div className='row'>
-                        <div className="col-sm-12 col-md-5 mt-5 op-0 fadeUp">
-                            <div className= {`${styles.bannerTitle} `} >
-                                <h1 className={`${istok.className}`}>Cultivating for a better future</h1>
+                        <div className="col-sm-12 col-md-8 mt-5 op-0 fadeUp">
+                            <div className={`${styles.bannerTitle} `} >
+                                <h1 className={`${istok.className}`}>Cultivating for a<br/> better future</h1>
                             </div>
                             <div className="col-1-1 no-p ">
-                                <div  className={`${styles.bannerDesc} fed`}>
-                                    <p className={istok.className}>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
+                                <div className={`${styles.bannerDesc} fed`}>
+                                    <p className={istok.className}> In publishing and graphic design, Lorem ipsum is a placeholder text<br/> commonly used to demonstrate the visual form of a document or a typeface without<br/> relying on meaningful content. </p>
 
                                 </div>
                             </div>

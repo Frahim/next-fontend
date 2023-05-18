@@ -3,10 +3,12 @@ import products from "../../products";
 import Image from "next/image";
 import Beens from "../../../public/beans.jpg"
 import HomeBanner from "@/components/HomeBanner";
+import Navbar from "@/components/Navbar";
 function Product({ product }) {
 
   return (
     <>
+    <Navbar />
     <HomeBanner/>
     <div className="wrapper sectionPadding">
       <div className="container">

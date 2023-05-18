@@ -1,7 +1,7 @@
 "use client";
 import './globals.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import Navbar from '../components/Navbar';
+
 import Footer from '../components/Footer';
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
@@ -125,7 +125,7 @@ export default function RootLayout({ children }: { children: React.ReactNode, })
 
     <html lang='en'>
       <body ref={ref}>
-        <Navbar />
+       
         {children}
         <Footer />
       </body>

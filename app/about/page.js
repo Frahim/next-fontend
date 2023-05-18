@@ -1,9 +1,11 @@
 import React from 'react';
 import Carousel from "../../components/carousel";
-
+import Navbar from '../../components/Navbar';
 
 function About() {
   return (
+    <>
+  <Navbar />
     <div className='aboutWrapper'>
       <div className="header-slider">
         <div className="background-image bg-image">
@@ -28,6 +30,7 @@ function About() {
       </div>
 
     </div>
+    </>
   )
 }
 
