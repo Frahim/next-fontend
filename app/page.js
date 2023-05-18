@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import HomeBanner from "../components/HomeBanner";
 import SisterConcern from "../components/sisterConcern";
 import Carousel from "../components/carousel";
-import Fact from '../components/Factfiger';
+import Counting from "../components/counting"
 
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
          <Navbar />
             <HomeBanner />
             <SisterConcern />
-            <Fact/>
+            <Counting/>
             <div className="sectionPadding">
             <Carousel/>
             </div>
