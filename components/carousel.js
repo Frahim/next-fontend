@@ -22,27 +22,27 @@ export default function BootstrapCarousel({ }) {
         </div>
         <Carousel className="mycar" show={3} slide={3} swiping={true} autoPlay={true}>
           <div className="itemwrwpper">
-            <Image width={300} height={300} src={pim} />
+            <Image width={300} height={300} src={pim} alt="Post Image"/>
             <h2 className="postTitle">Post title 1</h2>
           </div>
           <div className="itemwrwpper">
-            <Image width={300} height={300} src={waterlemon} />
+            <Image width={300} height={300} src={waterlemon} alt="Post Image"/>
             <h2 className="postTitle">Post title 2</h2>
           </div>
           <div className="itemwrwpper">
-            <Image width={300} height={300} src={cucumber} />
+            <Image width={300} height={300} src={cucumber} alt="Post Image" />
             <h2 className="postTitle">Post title 3</h2>
           </div>
           <div className="itemwrwpper">
-            <Image width={300} height={300} src={pim} />
+            <Image width={300} height={300} src={pim} alt="Post Image" />
             <h2 className="postTitle">Post title 4</h2>
           </div>
           <div className="itemwrwpper">
-            <Image width={300} height={300} src={waterlemon} />
+            <Image width={300} height={300} src={waterlemon} alt="Post Image"/>
             <h2 className="postTitle">Post title 5</h2>
           </div>
           <div className="itemwrwpper">
-            <Image width={300} height={300} src={cucumber} />
+            <Image width={300} height={300} src={cucumber} alt="Post Image" />
             <h2 className="postTitle">Post title 6</h2>
           </div>
 

@@ -1,28 +1,29 @@
 "use client"
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import Image from 'next/image';
-import whoicon from '../public/whoweare.png';
+
 import Agril from '../public/agrillogo_03.png';
 import kingfeed from '../public/kingfeedLogo.png';
-import Arrow from '../public/arow.svg';
+
 import gorgic from '../public/Georgiclogo.png'
 import Link from 'next/link';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { GrFormNextLink } from "react-icons/gr";
-import { Istok_Web } from '@next/font/google'
-const istok = Istok_Web({ subsets: ['latin'], weight: ['400', '700'] })
 
-import { Mogra } from '@next/font/google'
+
+
+import { Mogra } from '@next/font/google';
 const mogra = Mogra({ subsets: ['latin'], weight: ['400'] })
 
-export default function sisterConcern() {
+export default function SisterConcern() {
+
   gsap.registerPlugin(ScrollTrigger);
-  const ref = useRef(null);
+
   useEffect(() => {
-    const element = ref.current;
+    const element = document.querySelectorAll(".slideRighr");
     gsap.fromTo(
-      element.querySelectorAll(".slideRighr"),
+      element,
       {
         opacity: 0,
         x: 100
@@ -33,7 +34,7 @@ export default function sisterConcern() {
         duration: 1,
         autoAlpha: 1,
         scrollTrigger: {
-          trigger: element.querySelector(".slideRighr"),
+          trigger: element,
 
         }
       }
@@ -103,7 +104,7 @@ export default function sisterConcern() {
     <div className='wrapper sectionPadding first' >
       <div className='container'>
         <div className='row g-0 align'>
-          <div className='col-sm-12 col-md-4 first_item sliderighr1' ref={ref}>
+          <div className='col-sm-12 col-md-4 first_item sliderighr1' >
             <div className='wrapper-sec bg-gray'>
               <Image className="mw-200 kingsLogo" width={150} alt="leeerob" src={Agril} />
               <h2 className={`${mogra.className} sisFirstTitle`}>Who we are</h2>
@@ -113,7 +114,7 @@ export default function sisterConcern() {
 
             </div>
           </div>
-          <div className='col-sm-12 col-md-4 scond_item' ref={ref}>
+          <div className='col-sm-12 col-md-4 scond_item'>
             <div className='wrapper-sec bg-white'>
               <h3 className={mogra.className}> Agril Foods LTD</h3>
               <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document
@@ -122,7 +123,7 @@ export default function sisterConcern() {
                 or a typeface without relying on meaningful content. </p>
             </div>
           </div>
-          <div className='col-sm-12 col-md-4 third_item align-self-center slideLeft' ref={ref}>
+          <div className='col-sm-12 col-md-4 third_item align-self-center slideLeft'>
             <div className='wrapper-sec bg-dark'>
               <h3 className={`${mogra.className} t-antiquewhite`}> Our people</h3>
               <p className='t-antiquewhite'>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document
@@ -132,7 +133,7 @@ export default function sisterConcern() {
         </div>
 
         <div className='row g-0 my-5' >
-          <div className='col-sm-12 col-md-4 scond_item slideRight2' ref={ref}>
+          <div className='col-sm-12 col-md-4 scond_item slideRight2'>
             <div className='wrapper-sec bg-white scwrwp'>
               <Image className="sislogo" width={200} alt="leeerob" src={kingfeed} />
               <Link className="sister-link" href="/kingfeed">
@@ -154,10 +155,7 @@ export default function sisterConcern() {
               <Link className="sister-link" href="/georgicabd">
                 <span className='sisName'>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of .</span>
                 <GrFormNextLink className='sister-icon' />
-              </Link>
-              {/* <h3 > Our people</h3>
-              <p >In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document
-                or a typeface without relying on meaningful content. </p>*/}
+              </Link>             
             </div>
           </div>
         </div>

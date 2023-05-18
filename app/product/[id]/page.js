@@ -15,7 +15,7 @@ function Product() {
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-6">
-            <Image width={700} src={Beens} />
+            <Image width={700} src={Beens} alt="product Image" />
           </div>
           <div className="col-sm-12 col-md-6">
             <h1 className="productTitle">Beans Dwarf</h1>

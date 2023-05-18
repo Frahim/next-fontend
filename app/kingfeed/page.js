@@ -64,7 +64,8 @@ function kingfeed() {
                             </div>
                             <div className="col-1-1 no-p ">
                                 <div className={`${styles.bannerDesc} fed`}>
-                                    <p className={istok.className}> In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
+                                    <p className={istok.className}> In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to 
+                                    demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
 
                                 </div>
                             </div>
@@ -77,11 +78,11 @@ function kingfeed() {
                 <div className='container'>
                     <h2>Welcome to King Feeds Limited </h2>
                     <h3>What is Lorem Ipsum?</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
                         remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
                         software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
                         remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
                         software like Aldus PageMaker including versions of Lorem Ipsum.</p>

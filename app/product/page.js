@@ -28,7 +28,7 @@ export default function page() {
                         <Link href={`/product/${product.id}`}>
                             <div className="card box_shadow1">
                                 <div className="">
-                                    <Image src={product.img} width={200} height={200} />
+                                    <Image src={product.img} alt='product iamge' width={200} height={200} />
                                     <div className="card-body text-center">
                                         <h3 className="textDark mt-2"> {product.name}</h3>
                                     </div>
