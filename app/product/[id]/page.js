@@ -3,8 +3,10 @@ import Image from "next/image";
 import Beens from "../../../public/beans.jpg"
 import HomeBanner from "@/components/HomeBanner";
 import Navbar from "@/components/Navbar";
-function Product({ product }) {
 
+
+
+function Product() {
   return (
     <>
     <Navbar />
@@ -26,7 +28,7 @@ function Product({ product }) {
               <ul>
                 <li>High Resistance:</li>
                 <li> Bean Common Mosaic Virus (BCMV)</li>
-                <li>Anthracnose (Cl (l))</li>
+                <li>Anthracnose</li>
               </ul>
 
               <p className="resistance">Intermediate Resistance:</p>
